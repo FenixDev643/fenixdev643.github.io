@@ -1,0 +1,13 @@
+hola, soy Marco, un desarrollador Web Independiente que antes se dedicaba a hacer videojuegos,
+pero, con el paso del tiempo se acerco hacia el desarrollo Web Front End, usando
+herramientas como Sass, Bootstrap, React Native, Chakra UI para despues, dedicarme a estudiar 
+el desarrollo Web Backend en herramientas como Nodejs, mySQL etc...
+actualmente tengo 15 años, y llevo adentrandome en el mundo de la programacion desde los 8,
+poco a poco voy mejorando mis habilidades y me gusta seguir aprendiendo
+
+Hey!, I am Marco, an indie Web Developer who before been dedicated to making videogames,
+but, over time, I started to work on the Web Front End Development, using tools
+like Sass, Bootstrap, React Native, React, and Chakra UI, for after, study the Backend Web Development
+in tools like Nodejs, MySQL, etc...
+I have 15 years old, and I've been getting inside the world of programming since 8
+years old, bit a bit I was improving my skills and I like to continue learning.
