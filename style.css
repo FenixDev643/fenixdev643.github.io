@@ -13,7 +13,7 @@
         width: 10px;
 }
 
-#info::-webkit-scrollbar{
+#info div::-webkit-scrollbar{
         width: 2vh;
 }
 
@@ -21,7 +21,7 @@
         background-color: var(--blueDark);
 }
 
-#info::-webkit-scrollbar-track{
+#info div::-webkit-scrollbar-track{
         background-color: rgba(1, 1, 1, 0.1);
 }
 
@@ -30,7 +30,7 @@
         border-radius: 50px;
 }
 
-#info::-webkit-scrollbar-thumb{
+#info div::-webkit-scrollbar-thumb{
         background-color: rgba(1, 1, 1, 0.4);
         border-radius: 50px;
 }
@@ -39,7 +39,7 @@
         background-color: var(--blueDark3);
 }
 
-#info::-webkit-scrollbar-thumb:hover{
+#info div::-webkit-scrollbar-thumb:hover{
         background-color: rgba(1, 1, 1, 0.5);
 }
 
@@ -114,11 +114,31 @@ nav div{
         background-color: var(--redDark);
         color: white;
         display: grid;
-        overflow: overlay;
         grid-template-areas: "info-text info-image";
         grid-template-columns: auto 40%;
         grid-template-rows: 100%;
-        align-items: center;
+        align-items: flex-start;
+        overflow: hidden;
+}
+
+#info div{
+        margin: 0 5px;
+        grid-area: info-text;
+        height: 100%;
+        overflow: overlay;
+}
+
+#info h3,p{
+        margin: 0;
+}
+
+#info ul{
+        list-style-type: circle;
+}
+
+#info ul p{
+        text-decoration: underline;
+        margin: 5px 0;
 }
 
 #info img{
@@ -126,11 +146,7 @@ nav div{
         height: 150%;
         grid-area: info-image;
         object-fit: cover;
-}
-
-#info div{
-        margin: 5px;
-        grid-area: info-text;
+        align-self: center;
 }
 
 #projects{
@@ -175,6 +191,10 @@ nav div{
         grid-template-areas: "project-title project-image";
         grid-template-columns: 30% auto;
         box-shadow: -5px 8px 0px #111;
+}
+
+.project-tile .portrait-orientation{
+        object-fit: scale-down;
 }
 
 .project-img{
