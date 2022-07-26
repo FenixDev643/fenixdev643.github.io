@@ -72,6 +72,7 @@ nav{
         grid-template-areas: "title"
                              "nav-elements";
         grid-template-rows: 20% auto;
+        z-index: 2;
 }
 
 nav p{

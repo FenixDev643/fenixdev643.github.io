@@ -40,7 +40,7 @@ main{
         align-items: center;
 }
 
-input,button{
+input,button,textarea{
         width: 50vw;
         height: 5vh;
         margin: 5px;
@@ -54,10 +54,15 @@ button[type="submit"]{
         box-shadow: 3px 4px 0px var(--blueDark2);
 }
 
-input::placeholder{
+input::placeholder,textarea::placeholder{
         color: var(--shadow);
 }
 
 i{
         text-align: center;
+}
+
+textarea{
+        resize: none;
+        height: 10vh;
 }
