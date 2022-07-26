@@ -3,9 +3,23 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>mail</title>
+        <title>Send me a Email</title>
+
+        <link rel="stylesheet" href="/src/styles/mail.css">
 </head>
 <body>
-        mail
+        <main>
+                <h1 class="title">Send me a Email</h1>
+                <form
+                class="formulary"
+                action="https://formsubmit.co/marcusfonox643@gmail.com" 
+                method="post">
+                        <input placeholder="name" type="text" name="name" required>
+                        <input placeholder="email" type="email" name="email" required>
+                        <input type="hidden" name="_subject" value="Nuevo Email de la pagina Oficial">
+                        <input type="hidden" name="_next" value="https://fenixdev643.github.io/thanks.html">
+                        <button type="submit">Send</button>
+                </form>
+        </main>
 </body>
 </html>
