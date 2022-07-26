@@ -7,6 +7,7 @@
         --blueDark: #20294f;
         --blueDark2: #1a213d;
         --blueDark3: #101426;
+        --shadow: #b3b3b3;
 }
 
 :root::-webkit-scrollbar{
@@ -108,6 +109,22 @@ nav div{
         justify-content: center;
         align-items: center;
         color: white;
+}
+
+#welcome .email-button{
+        text-decoration: none;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 170px;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: White;
+        color: #111;
+        box-shadow: 4px 4px 0px var(--shadow);
 }
 
 #info{
@@ -286,8 +303,39 @@ nav div{
 #contact{
         width: 100%;
         height: 20vh;
-        background-color: var(--blue);
+        background-color: var(--blueDark);
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+#contact .links{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+#contact .links a{
+        margin: 5px;
+        text-decoration: none;
+        background-color: White;
+        color: #111;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 0px var(--shadow);
+}
+
+#contact p{
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+}
+
+ion-icon{
+        position: relative;
+        top: 3px;
 }
 
 /* media query */
@@ -321,6 +369,7 @@ nav div{
                 width: 1.5vw;
         }
 
+        #welcome .email-button { top: 6rem; }
         .project-tile{ font-size: small; height: 45vw; width: 70vw; margin-bottom: 10px; }
         #projects .row{ flex-direction: column; margin: 0; }
         #content .content { grid-template-columns: 45vw 45vw; }
@@ -336,4 +385,6 @@ nav div{
                 grid-template-rows: 40% auto;
                 grid-template-columns: auto;
         }
+
+        #welcome .email-button { top: 9rem; }
 }
