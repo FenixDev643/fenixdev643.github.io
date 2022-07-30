@@ -240,6 +240,7 @@ nav div{
         color: White;
         grid-area: project-title;
         margin: 5px;
+        font-size: 60%;
 }
 
 #content{
